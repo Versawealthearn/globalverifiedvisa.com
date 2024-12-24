@@ -1,0 +1,14 @@
+.alert {
+  border: none;
+  border-radius: $border-radius;
+  
+  &.alert-success {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+  
+  &.alert-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+}

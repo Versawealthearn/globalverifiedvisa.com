@@ -1,0 +1,31 @@
+// Add these styles to your existing styles.scss file
+.form-control, .form-select {
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+  }
+}
+
+#formFeedback {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  
+  &.hide {
+    opacity: 0;
+  }
+}
+
+.alert {
+  border: none;
+  border-radius: $border-radius;
+  
+  &.alert-success {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+  
+  &.alert-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+}

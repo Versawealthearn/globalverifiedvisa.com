@@ -1,0 +1,68 @@
+// Import Bootstrap and variables
+@import './_variables';
+
+// Import component styles
+@import './components/forms';
+@import './components/alerts';
+
+// Custom styles
+.hero {
+  background: linear-gradient(to right, #f8fafc, #eff6ff);
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+  .navbar-brand-img {
+    max-height: 40px;
+    width: auto;
+  }
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Visa category cards
+.visa-categories {
+  .card {
+    height: 400px;
+    
+    .card-img {
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .card-img-overlay {
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+      transition: background 0.3s ease;
+    }
+    
+    &:hover .card-img-overlay {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+    }
+  }
+}
+
+// Modal customization
+.modal-content {
+  border: none;
+  .modal-header {
+    border-bottom: 2px solid $primary;
+  }
+  .modal-body {
+    padding: 2rem;
+  }
+}
